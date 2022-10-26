@@ -10,27 +10,33 @@
 <div class="wrapper">
     <div class="task-input">
         <input type="text" placeholder="Add a task" id="task-input">
-        <button id="add-task">Add</button>
+        <!-- <button id="add-task">Add</button> -->
     </div>
     <div class="controls">
-       <div class="filetes">
-            <span id="all">All</span>
-            <span id="pending">Pending</span>
-            <span id="completed">Completed</span>
-       </div>
-        <button id="clear-completed">Clear Completed</button>
-    </div>
-    <ul class="task-list" id="task-list">
-        <li class="task-item">
+        <div class="filters">
+          <span class="active" id="all">All</span>
+          <span id="pending">Pending</span>
+          <span id="completed">Completed</span>
+        </div>
+        <button class="clear-btn">Clear All</button>
+      </div>
+    <ul class="task-box" id="task-box">
+        <li class="task">
             <label for="task1">
                 <input type="checkbox" id="task1">
                 <p>Task 1</p>
             </label>
             <div class="settings">
                 <i class="uil uil-ellipsis-h"> </i>
+                <ul class="task-menu">
+                    <li> <i class="uil uil-pen"></i>Edit</li>
+                    <li> <i class="uil uil-trash"></i>Delete</li>
+
+                </ul>
             </div>
         </li>
-        <li class="task-item">
+
+        <li class="task">
             <label for="task2">
                 <input type="checkbox" id="task2">
                 <p>Task 2</p>
@@ -39,7 +45,7 @@
                 <i class="uil uil-ellipsis-h"> </i>
             </div>
         </li>
-        <li class="task-item">
+        <li class="task">
             <label for="task1">
                 <input type="checkbox" id="task3">
                 <p>Task 3</p>
