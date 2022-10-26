@@ -72,6 +72,10 @@ body{
     border-radius: 4px ;
     font-size: 13px;
 }
+.controls .clear-btn:hover{
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+}
 .task-box{
     margin: 20px 25px;
 }
@@ -91,6 +95,9 @@ body{
 }
 .task label{
     display: flex;
+}
+.task label p.checked{
+   text-decoration: line-through;
 }
 .task label input{
     margin-top: 6px;
@@ -115,11 +122,15 @@ body{
     transition: transform 0.3s ease;
 
 }
-.settings:hover .task-menu{
+.settings .task-menu.show{
     transform: scale(1);
 
-
 }
+.settings i{
+    transform: rotate(90deg);
+}
+
+
 .task .task-menu li{
     height: 25px;
     font-size: 15px;
